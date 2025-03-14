@@ -71,7 +71,10 @@ app.put('/:query', (req, res) => {
   const { query } = req.params
   //destructuring
   const {id,email, password } = req.body
- 
+  res.status(200).json({
+    message: 'Resource updated',
+    data: {id,email,password}
+  })
 })
 
 app.listen(3000, () => {
