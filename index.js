@@ -67,6 +67,7 @@ app.post('/2fs', (req, res) => {
 
 });
 
+
 app.put('/:query', (req, res) => {
   const { query } = req.params
   //destructuring
